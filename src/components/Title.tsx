@@ -38,7 +38,7 @@ function Title() {
 
     return (
         <>
-            <div className="font-nunito-sans flex flex-col items-center justify-center gap-5 text-center text-white">
+            <div className="font-nunito-sans flex h-full w-full flex-col items-center justify-center gap-10 text-center text-white">
                 <div>
                     <h1 className="text-8xl font-black">Otso Saarinen</h1>
                     <h2 className="text-4xl font-bold text-blue-500 italic">
@@ -54,18 +54,20 @@ function Title() {
                         cursor={false}
                     />
                 </div>
-                <div className="">
-                    <div className="text-4xl font-bold text-blue-500 italic">
+                <div className="flex flex-col gap-3">
+                    <div className="text-4xl font-bold text-blue-500">
                         Skills
                     </div>
-                    <div className="grid grid-cols-4 gap-5">
+                    <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
                         {skills.map((skill, index) => {
                             const categoryName = Object.keys(skill)[0];
                             const singleSkill = skill;
                             return (
-                                <div key={index} className="text-xl">
-                                    <div>{categoryName}</div>
-                                    <div>
+                                <div key={index}>
+                                    <div className="text-2xl font-bold text-blue-500">
+                                        {categoryName}
+                                    </div>
+                                    <div className="text-xl">
                                         {singleSkill[categoryName].map(
                                             (skillName, skillIndex) => {
                                                 return (
