@@ -1,10 +1,12 @@
 import "./App.css";
-import Title from "./components/title";
+import Title from "./components/Title";
 
 function App() {
     return (
         <>
-            <Title />
+            <div className="flex h-screen w-screen flex-col items-center justify-center bg-linear-to-b from-blue-950 to-neutral-950">
+                <Title />
+            </div>
         </>
     );
 }
