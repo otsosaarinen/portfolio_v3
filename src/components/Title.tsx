@@ -62,10 +62,20 @@ function Title() {
                         {skills.map((skill, index) => {
                             const categoryName = Object.keys(skill)[0];
                             const singleSkill = skill;
-                            console.log(singleSkill[categoryName]);
                             return (
                                 <div key={index} className="text-xl">
-                                    {categoryName}
+                                    <div>{categoryName}</div>
+                                    <div>
+                                        {singleSkill[categoryName].map(
+                                            (skillName, skillIndex) => {
+                                                return (
+                                                    <div key={skillIndex}>
+                                                        {skillName}
+                                                    </div>
+                                                );
+                                            },
+                                        )}
+                                    </div>
                                 </div>
                             );
                         })}
