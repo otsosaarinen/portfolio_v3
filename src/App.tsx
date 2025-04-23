@@ -4,7 +4,7 @@ import Title from "./components/Title";
 function App() {
     return (
         <>
-            <div className="flex min-h-screen flex-col items-center justify-center bg-neutral-900">
+            <div className="flex flex-col items-center justify-center">
                 <Title />
             </div>
         </>
