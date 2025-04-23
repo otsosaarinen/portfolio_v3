@@ -1,4 +1,5 @@
 import Typewriter from "react-ts-typewriter";
+import { useState } from "react";
 
 function Title() {
     type SkillType = {
@@ -35,6 +36,16 @@ function Title() {
             ],
         },
     ];
+
+    const [skillsVisibility, setSkillsVisibility] = useState<string>("hidden");
+
+    const handleClick = () => {
+        if (skillsVisibility == "hidden") {
+            setSkillsVisibility("grid");
+        } else {
+            setSkillsVisibility("hidden");
+        }
+    };
 
     return (
         <>
@@ -86,16 +97,21 @@ function Title() {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-2">
-                    <div className="text-honeydew text-4xl font-bold">
+                <div className="flex flex-col items-center justify-center gap-3">
+                    <div
+                        onClick={handleClick}
+                        className={`bg-naples-yellow shadow-naples-yellow/40 w-24 rounded-md py-1 text-2xl font-bold text-white shadow-lg text-shadow-lg/40 hover:cursor-pointer`}
+                    >
                         Skills
                     </div>
-                    <div className="grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-0">
+                    <div
+                        className={`${skillsVisibility} grid-cols-1 gap-5 md:grid-cols-4 md:gap-0`}
+                    >
                         {skills.map((skill, index) => {
                             const categoryName = Object.keys(skill)[0];
                             const singleSkill = skill;
                             return (
-                                <div key={index}>
+                                <div key={index} className="flex flex-col">
                                     <div className="text-naples-yellow text-2xl font-bold">
                                         {categoryName}
                                     </div>
