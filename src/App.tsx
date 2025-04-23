@@ -1,18 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
-import Content from "./components/Content";
+import Skills from "./components/Skills";
 
 function App() {
     return (
         <>
-            <div className="font-nunito-sans flex h-screen w-screen flex-col items-center justify-start bg-neutral-900">
-                <div className="w-full bg-blue-400">
+            <div className="font-nunito-sans h-screen w-screen bg-[url('/coding.jpg')] bg-cover bg-no-repeat">
+                <div className="flex h-full w-full flex-col gap-5 bg-neutral-900/60 text-neutral-800">
                     <Header />
-                </div>
-                <div className="w-full flex-grow bg-[url('/coding.jpg')] bg-cover bg-no-repeat">
-                    <div className="h-full w-full bg-neutral-900/65">
-                        <Content />
-                    </div>
+                    <Skills />
                 </div>
             </div>
         </>
