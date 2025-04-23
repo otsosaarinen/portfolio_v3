@@ -1,7 +1,7 @@
 function Content() {
     return (
         <>
-            <div className="flex flex-col gap-5 bg-neutral-900/65 px-5 py-20 text-white">
+            <div className="flex flex-col gap-5 px-10 py-20 text-white">
                 <div>
                     <h1 className="text-8xl font-black">Otso Saarinen</h1>
                     <h2 className="text-3xl font-bold italic">
