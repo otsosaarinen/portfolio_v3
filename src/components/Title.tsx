@@ -56,11 +56,11 @@ function Title() {
                         cursor={false}
                     />
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
                     <div className="text-honeydew text-4xl font-bold">
                         Skills
                     </div>
-                    <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4">
                         {skills.map((skill, index) => {
                             const categoryName = Object.keys(skill)[0];
                             const singleSkill = skill;
