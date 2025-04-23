@@ -53,7 +53,7 @@ function Title() {
                         text="I'm a recently graduated ICT engineer from Turku UAS,
                     interested about web development & health technology.
                     Actively looking for a full-time job in the IT industry."
-                        speed={20}
+                        speed={15}
                         cursor={false}
                     />
                 </div>
@@ -68,7 +68,7 @@ function Title() {
                             target="_blank"
                         >
                             <img
-                                className="h-auto w-10"
+                                className="h-auto w-10 transform transition-transform duration-150 ease-in-out hover:scale-115"
                                 src="/github_logo.png"
                                 alt="GitHub logo"
                             />
@@ -78,7 +78,7 @@ function Title() {
                             target="_blank"
                         >
                             <img
-                                className="h-auto w-10"
+                                className="h-auto w-10 transform transition-transform duration-150 ease-in-out hover:scale-115"
                                 src="/linkedin_logo.png"
                                 alt="LinkedIn logo"
                             />
