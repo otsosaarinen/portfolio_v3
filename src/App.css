@@ -3,4 +3,9 @@
 
 @theme {
     --font-nunito-sans: "Nunito Sans", sans-serif;
+    --color-dark-purple: #160c28;
+    --color-naples-yellow: #efcb68;
+    --color-honeydew: #e1efe6;
+    --color-ash-gray: #aeb7b3;
+    --color-rich-black: #000411;
 }
