@@ -18,6 +18,7 @@ function Skills() {
             "Cloud & database": [
                 "Apache Kafka",
                 "Microsoft Azure",
+                "Active Directory",
                 "PostgreSQL",
                 "SQLite",
                 "InfluxDB",
@@ -27,26 +28,23 @@ function Skills() {
             Miscellaneous: [
                 "REST API",
                 "OAuth 2.0",
+                "GitHub",
                 "Gen AI",
                 "Grafana",
-                "GitHub",
             ],
         },
     ];
 
     return (
         <>
-            <div className="flex flex-col gap-3 px-5">
-                <div className="text-3xl font-bold text-white">My Skills</div>
-                <div className="grid h-50 w-250 grid-cols-4 gap-3">
+            <div className="flex w-220 flex-col bg-indigo-500 p-5 text-white">
+                <div className="text-xl font-medium">My Skills</div>
+                <div className="grid grid-cols-4">
                     {skills.map((skill, index) => {
                         const categoryName = Object.keys(skill)[0];
                         const singleSkill = skill;
                         return (
-                            <div
-                                key={index}
-                                className="flex flex-col justify-around bg-white p-2 shadow-xl shadow-white/10"
-                            >
+                            <div key={index} className="flex flex-col">
                                 <div className="text-2xl font-bold">
                                     {categoryName}
                                 </div>
