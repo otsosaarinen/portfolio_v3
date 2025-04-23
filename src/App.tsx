@@ -11,6 +11,7 @@ function App() {
                 <div className="flex h-full w-full flex-col bg-neutral-900/70 text-neutral-800">
                     <Header />
                     <Info />
+                    <Skills />
                 </div>
             </div>
         </>
