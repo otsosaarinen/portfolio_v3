@@ -10,7 +10,7 @@ function Skills() {
                 "JavaScript",
                 "React",
                 "Tailwind CSS",
-                "HTML",
+                "HTML5",
             ],
         },
         { Backend: ["Node.js", "Express.js", "Python", "Flask", "Postman"] },
