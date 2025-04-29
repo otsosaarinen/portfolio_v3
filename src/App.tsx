@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
-import Skills from "./components/Skills";
 import Info from "./components/Info";
+import Skills from "./components/Skills";
+import ProjectBanner from "./components/ProjectBanner";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                     <Header />
                     <Info />
                     <Skills />
+                    <ProjectBanner />
                 </div>
             </div>
         </>
