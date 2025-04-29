@@ -20,7 +20,6 @@ function Skills() {
                 "Microsoft Azure",
                 "Active Directory",
                 "PostgreSQL",
-                "SQLite",
                 "InfluxDB",
             ],
         },
