@@ -9,10 +9,10 @@ function Info() {
                     health technology.
                 </div>
                 <div className="flex flex-col gap-5">
-                    <div className="flex w-65 items-center justify-center bg-indigo-500 p-5 text-xl">
+                    <div className="flex w-70 items-center justify-center bg-indigo-500 p-5 text-xl">
                         Azure AZ-900 Certified
                     </div>
-                    <div className="flex w-65 items-center justify-center bg-indigo-500 p-5 text-xl">
+                    <div className="flex w-70 items-center justify-center bg-indigo-500 p-5 text-xl">
                         Bachelor of Engineering
                     </div>
                 </div>
